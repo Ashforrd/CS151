@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Galaxy Tours</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Galaxy Tour</h1>
+        <div id="app">
+            <h2 :class="h2ClassController">{{productName}}</h2>
+            <p :style="pStyleController">{{productDescription}}</p>
+            <table v-for="(productClass, index) in productClasses" :key="index" width="100%">
+                <tr>
+                    <td width="20%">{{productClass.name}}</td>
+                    <td width="20%">US${{productClass.price.toLocaleString('en-US')}}</td>
+                    <td>
+                        <button style="width: 35%" v-if="productClass.earlyBird" @click="bookSend(index)">Book Earlybird!</button>
+                        <button style="width: 35%" v-else @click="bookSend(index)">Book</button>&nbsp;
+                        <span v-show="productClass.seatsAvailable < 10" style="color:red">
+                            Almost Sold out!
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <span v-show = orderShow>
+                <select id="orderType" v-model="orderTypeIndex" @change="select_change($event)" >
+                    <option v-for="(stringItem, index) in orderType" :value="index" >
+                        {{stringItem}}
+                    </option>
+                </select>
+            
+                Name : <input type="text" v-model="name">
+                Tickets :<input type="number" v-model="ticketNumber" min=0 :max="currentSeats">
+                Note : <input type="text" v-model="note">
+                <button @click="orderSend">Order</button> 
+            </span>
+            <br>
+            <div v-html="data"></div>
+            
+            
+           
+            <br><br>
+            <img :src="imageSrc[Math.floor(Math.random()*imageSrc.length)]"
+                :style="imageStyleController"
+                :alt="imageAlt" :title="imageAlt">
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

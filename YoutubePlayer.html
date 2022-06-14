@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Web Fundamentals Workshop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="work/YoutubePlayer/style.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="index.html" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>顏文奎</h1>
+									<p>1071514</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/MyPicture/me.png" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>YoutubePlayer</h2>
+								</header>
+
+								<p>
+									專案介紹:<br>
+									透過使用Youtube Api，可以撥放Youtube的指定影片，並且可以擷取特定時段<br>
+								</p>
+
+								<h1>YouTube 心情點唱機</h1>
+								<h2 id = "MusicName" algin="center" style="position:relative;top:1em"></h2><!--播放歌曲名稱放這裡-->
+								<div id="player"algin="center" style="position:relative;top:2em"></div><!-- YouTube Video Player -->
+								<br>
+								<input id="playButton" type="button" value="Play" algin="center" style="position:relative;top:1.5em">
+								<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+								<script src="https://www.youtube.com/iframe_api"></script>
+								<script src="work/YoutubePlayer/playList.js"></script>
+								<script src="work/YoutubePlayer/main.js"></script>
+
+								<p></p>
+
+								<h2>其他專案</h2>
+
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="RandomSelector.html" class="image fit"><img src="images/MyPicture/RandomSlector.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="ClassSystem.html" class="image fit"><img src="images/MyPicture/ClassSystem.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="MindQuiz.html" class="image fit"><img src="images/MyPicture/MindQuiz.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="RPG.html" class="image fit"><img src="images/MyPicture/RPG.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="YoutubePlayer.html" class="image fit"><img src="images/MyPicture/YoutubePlayer.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="Galaxy.html" class="image fit"><img src="images/MyPicture/Galaxy.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="BarChart.html" class="image fit"><img src="images/MyPicture/BarChart.png" alt=""></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

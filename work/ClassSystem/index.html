@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Club Course</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $( "#datepicker-widget-format" ).datepicker();
+            });
+        </script>
+    </head>
+    <body>
+        <h1>社團課程時間表</h1>
+
+        <table id="courseTable"></table>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="topic.js"></script>
+        <script src="main.js"></script>   
+
+        <p>Date: <input type="text" id="datepicker-widget-format"></p>
+        <button onclick="set()">press</button>     
+    </body>
+</html>
